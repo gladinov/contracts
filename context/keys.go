@@ -1,7 +1,9 @@
 package contextkeys
 
-type ctxKey struct{}
+type TraceIDKeyStruct struct{}
+type EncryptedTokenKeyStruct struct{}
+type ChatIDKeyStruct struct{}
 
-var TraceIDKey = ctxKey{}
-var EncryptedTokenKey = ctxKey{}
-var ChatIDKey = ctxKey{}
+var TraceIDKey = TraceIDKeyStruct{}
+var EncryptedTokenKey = EncryptedTokenKeyStruct{}
+var ChatIDKey = ChatIDKeyStruct{}
